@@ -93,5 +93,59 @@ nav ul li a {
 
 .banner-image {
     width: 70%;
-    /* margin-left: 30rem; */
 }
+/* section style */
+main{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.our-sponsor{
+    margin-top: 50px;
+}
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+   
+}
+
+
+
+
+/* smaller divice */
+@media screen and (max-width : 576px) {
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    background-position: left top;
+  }
+  .banner .banner-title{
+    text-align: center;
+    margin:70px 0;
+  }
+  .banner-intro{
+    font-size: 2rem;
+  }
+  .banner-image{
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .our-sponsor{
+    margin-top: 0;
+  }
+  .images-container{
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    width: 100%;
+
+  }
+  
+}
+ 
